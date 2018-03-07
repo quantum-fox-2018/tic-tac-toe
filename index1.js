@@ -10,7 +10,6 @@ function createTicTacToe(Row,Col) {
     for (let i = 0; i < Row; i++) {
         arrBoard.push(['\n']);
         for (let j = 0; j < Col; j++) {
-            /////
             let alpha = 'OX';
             let createRandom = Math.round(Math.random());
 
