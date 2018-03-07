@@ -8,8 +8,6 @@ function ticTacToe(jumlahRow,jumlahColumn){
 
     outputTicTacToe.push([]);
 
-
-
     for(let j=0; j<jumlahColumn; j++){
       var OXroll = Math.round(Math.random());
       if( OXroll == 0 && jumlahX != 0 || jumlahO == 0){
