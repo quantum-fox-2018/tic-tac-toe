@@ -1,11 +1,11 @@
-function ticTacToe(input) {
+function ticTacToe() {
   var hasil = [];
   var countX = 0;
   var countO = 0;
 
-  for (var i = 0; i < input; i++) {
+  for (var i = 0; i < 3; i++) {
     var row = [];
-    for (var j = 0; j < input; j++) {
+    for (var j = 0; j < 3; j++) {
       var random = Math.round(Math.random());
       if (random === 1 && countO < 5) {
         row.push('O');
@@ -24,4 +24,4 @@ function ticTacToe(input) {
   return hasil;
 }
 
-console.log(ticTacToe(3));
+console.log(ticTacToe());
