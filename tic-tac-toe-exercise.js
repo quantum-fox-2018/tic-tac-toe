@@ -8,10 +8,10 @@ function ticTacToe(jumlahRow,jumlahColumn){
 
     outputTicTacToe.push([]);
 
-    var OXroll = Math.round(Math.random());
+
 
     for(let j=0; j<jumlahColumn; j++){
-
+      var OXroll = Math.round(Math.random());
       if( OXroll == 0 && jumlahX != 0 || jumlahO == 0){
         var sign = 'X'
         jumlahX--;
