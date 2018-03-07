@@ -4,10 +4,10 @@ function getTicTacToe(baris, kolom){
   for (var i = 0; i < baris; i++) {
     var tempArr = [];
     for (var j = 0; j < kolom; j++) {
-      if(xCount === 5){
+      if(xCount === Math.ceil(baris*kolom/2)){
         tempArr.push("o")
         oCount++;
-      }else if(oCount === 5){
+      }else if(oCount === Math.ceil(baris*kolom/2)){
         tempArr.push("x")
         xCount++;
       }else{
@@ -23,7 +23,9 @@ function getTicTacToe(baris, kolom){
     }
     console.log(tempArr);
   }
+  //console.log(oCount + " " + xCount);
   return ""
+
 }
 
 function getRandomInt(min, max) {
